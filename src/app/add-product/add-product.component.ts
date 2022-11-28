@@ -22,9 +22,8 @@ export class AddProductComponent {
       price:this.price,
       description:this.description,
       category:this.category,
-      image:this.image,
+      imag:this.image,
       rate:this.rate,
-      count:this.count,
       seller:this.seller,
       qty:this.qty
     }
