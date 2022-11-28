@@ -7,37 +7,41 @@
             <div class="row g-3 justify-content-center mx-auto">
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="formlabel">Product Title</label>
-                    <input type="text" class="form-control" id="">
+                    <input type="text" class="form-control" name="title" [(ngModel)]="title" id="">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="formlabel">Product image</label>
                     <div class="input-group">
                         <input type="file" class="form-control" id="inputGroupFile02">
-                        <label class="input-group-text" for="inputGroupFile02">Upload</label>
+                        <label class="input-group-text" name="image" [(ngModel)]="image">Upload</label>
                     </div>
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="formlabel">Description</label>
-                    <textarea type="text" class="form-control" id=""></textarea>
+                    <textarea type="text" class="form-control" name="description" [(ngModel)]="description"></textarea>
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="formlabel">Price</label>
-                    <textarea type="text" class="form-control" id=""></textarea>
+                    <textarea type="text" class="form-control" name="price" [(ngModel)]="price"></textarea>
+                </div>
+                <div class="col col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                    <label for="" class="formlabel">Category</label>
+                    <input type="text" class="form-control" name="category" [(ngModel)]="category">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
                     <label for="" class="formlabel">Rating</label>
-                    <input type="text" class="form-control" id="">
-                </div>
+                    <input type="text" class="form-control" name="rate" [(ngModel)]="rate">
+                </div>  
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4">
                     <label for="" class="formlabel">Sellar Name</label>
-                    <input type="text" class="form-control" id="">
+                    <input type="text" class="form-control" name="seller" [(ngModel)]="seller">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-                    <label for="" class="formlabel">Quantiry</label>
-                    <input type="text" class="form-control" id="">
+                    <label for="" class="formlabel">Quantity</label>
+                    <input type="text" class="form-control" name="qty" [(ngModel)]="qty">
                 </div>
                 <div class="col col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <a type="text" class="btn btn-primary text-center form-control" id="">Submit</a>
+                    <a type="text" (click)="readValues()" class="btn btn-primary text-center form-control" id="">Submit</a>
                 </div>
             </div>
         </div>
